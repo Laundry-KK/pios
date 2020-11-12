@@ -4,7 +4,7 @@
 void kmain(void)
 {
 	const char *str = "PiKern";
-	char *vidptr = (char*)0xb8000; 	//video mem begins here.
+	char *vidptr = (char*)0xb8000;
 	unsigned int i = 0;
 	unsigned int j = 0;
   
