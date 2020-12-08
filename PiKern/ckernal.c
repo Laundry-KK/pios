@@ -4,12 +4,11 @@
 void kmain(void)
 {
 	const char *str = "PiKern V1.1 Beta";
-	char *vidptr = (char*)0xb8000; 	//video mem begins here.
+	char *vidptr = (char*)0xb8000; 	//S needs to help connect this to the colortable in colortable.md
 	unsigned int i = 0;
 	unsigned int j = 0;
 
-	/* this loops clears the screen
-	* there are 25 lines each of 80 columns; each element takes 2 bytes */
+	
 	while(j < 80 * 25 * 2) {
 		/* blank character */
 		vidptr[j] = ' ';
@@ -20,11 +19,10 @@ void kmain(void)
 
 	j = 0;
 
-	/* this loop writes the string to video memory */
+	/* PiVID Module */
 	while(str[j] != '\0') {
-		/* the character's ascii */
+		/* ASCII defined */
 		vidptr[i] = str[j];
-		/* attribute-byte: give character black bg and light grey fg */
 		vidptr[i+1] = 0x07;
 		++j;
 		i = i + 2;
