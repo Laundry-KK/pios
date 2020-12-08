@@ -1,4 +1,4 @@
-;;kernel.asm
+;;entrypoint.asm
 bits 64			;nasm directive - 64 bit
 section .text
 
