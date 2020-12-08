@@ -1,7 +1,4 @@
 # pios
 An open source linux based kernal/os
-# RESTRICTION NOTICE
-FOR INTERNAL USE ONLY,
-DO NOT REDISTRIBUTE,
-DO NOT PUBLISH,
-INFORIGHT:ADMIN
+
+Licensed under LaundryKK Open License Class A
